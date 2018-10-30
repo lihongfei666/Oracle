@@ -21,8 +21,8 @@ GRANT CON_RES_VIEW_LHF TO NEW_USER_LHF;
 ```
 
 运行结果：
-![运行结果](https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-代码.png )
-(https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-运行结果.png )
+![运行结果]((https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-代码.png )
+(https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-运行结果.png ))
 
 
 - 第2步：新用户NEW_USER_LHF连接到pdborcl，创建表MYTABLE和视图MYVIEW，插入数据，最后将MYVIEW的SELECT对象权限授予HR用户。
@@ -32,8 +32,8 @@ GRANT SELECT ON MYVIEW TO HR;
 ```
 
 运行结果：
-![运行结果](https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-代码.png )
-(https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-运行结果.png )
+![运行结果]((https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-代码.png )
+(https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-运行结果.png ))
 
  
 
