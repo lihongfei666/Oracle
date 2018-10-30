@@ -22,6 +22,8 @@ GRANT CON_RES_VIEW_LHF TO NEW_USER_LHF;
 
 运行结果：
 ![运行结果](https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-代码.png )
+(https://github.com/lihongfei666/oracle/blob/master/test2/步骤1-运行结果.png )
+
 
 - 第2步：新用户NEW_USER_LHF连接到pdborcl，创建表MYTABLE和视图MYVIEW，插入数据，最后将MYVIEW的SELECT对象权限授予HR用户。
 
@@ -30,7 +32,10 @@ GRANT SELECT ON MYVIEW TO HR;
 ```
 
 运行结果：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test2/对象创建_共享_设置正确.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-代码.png )
+(https://github.com/lihongfei666/oracle/blob/master/test2/步骤2-运行结果.png )
+
+ 
 
 - 第3步：用户HR连接到pdborcl，查询NEW_USER_LHF授予它的视图MYVIEW
 
@@ -39,7 +44,8 @@ SELECT * FROM NEW_USER_LHF.MYVIEW;
 ```
 
 运行结果：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master//test2/HR查看被授予的视图.png)
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test2/步骤3-运行结果.png )
+
 
 ## 实验分析
 角色被创建时，并没有任何权限，不包含其他角色，所以要 GRANT 命令授权给该角色一些权限。相同的是用户被创建后也是需要 GRANT 命令授权的，创建用户时候可以指定设置其表空间并能限额。
