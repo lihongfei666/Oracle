@@ -143,6 +143,7 @@ select * from orders_nopartition, order_details_nopartition where orders_noparti
 ![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/计划2.png)
 
 - 对比分析：
+
 两张表中数据均为12288条，但是相对于不分区查询，分区查询所需要的时间更短，查询速度更快。所以可以看出分区查询的好处在于查询时候不会扫描完整张表，而是分区查询，从而提高了查询速度。
 
 
