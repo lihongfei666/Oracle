@@ -93,7 +93,7 @@ from orders;
 ```
 
 - 主表数据概览：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/分区主表数据概览.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/主表数据.png )
 
 从表sql语句：
 ```sql
@@ -111,7 +111,7 @@ from order_details;
 ```
 
 - 从表数据概览：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/分区从表数据概览.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/从表数据.png )
 
 ## 3.联合查询主表和从表（分区）
 ```sql
@@ -125,10 +125,10 @@ ON (orders.order_id = order_details.order_id);
 ```
 
 - 查询结果概览：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/分区查询_PartitionBefore2017.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/联合查询.png)
 
 - 查询执行计划：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/分区查询_执行计划.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/计划1.png )
 
 ## 4.联合查询两张表（不分区）对比实验分析
 ```sql
@@ -137,9 +137,9 @@ select * from orders_nopartition, order_details_nopartition where orders_noparti
 
 ```
 - 查询结果概览：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/未分区查询_查询结果.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/不分区查询.png)
 
 - 查询执行计划：
-![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test3/未分区查询_执行计划.png )
+![运行结果](https://github.com/lihongfei666/oracle/blob/master/test3/计划2.png)
 
 - 对比分析：
