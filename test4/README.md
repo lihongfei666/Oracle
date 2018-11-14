@@ -42,7 +42,7 @@ where a.order_id=b.order_id and b.product_name=c.product_name;
 
 - ## **查询出所有空订单，即没有订单详单的订单。**  
 ```aidl
-select orders.*
+select a.*
 from orders a left join order_details b
 on a.order_id=b.order_id
 where b.order_id is null
