@@ -68,5 +68,5 @@ END MyPack;
  ## 3.执行函数部分的测试
   ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/3.png )
     
-  ## 4.执行函数部分的测试
+  ## 4.执行过程部分的测试
   ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/4.png )
