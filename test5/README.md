@@ -27,11 +27,10 @@
   FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER;
   PROCEDURE Get_Employees(V_EMPLOYEE_ID NUMBER);
 END MyPack;
-/
 ```
 
 创建成功截图：
-    ![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test5/包创建成功截图.png )
+    ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/1.png )
 
  #2.创建函数和过程的主体
     实现语句
@@ -63,12 +62,11 @@ END MyPack;
       END LOOP;
     END;
 END MyPack;
-/
 ```
- ![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test5/包创建成功截图.png )
+ ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/2.png )
  
  #3.执行函数部分的测试
-  ![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test5/包创建成功截图.png )
+  ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/3.png )
     
   #4.执行函数部分的测试
-  ![运行结果](https://github.com/wtsStudy/Oracle/blob/master/test5/包创建成功截图.png )
+  ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/4.png )
