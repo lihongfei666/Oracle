@@ -20,8 +20,8 @@
 4. 由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？
 
 ## 实验过程步骤：
-# 1.创建一个包。
-    实现语句：
+## 1.创建一个包。
+  实现语句：
 ```sql
   create or replace PACKAGE MyPack IS
   FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER;
@@ -32,8 +32,8 @@ END MyPack;
 创建成功截图：
     ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/1.png )
 
- # 2.创建函数和过程的主体
-    实现语句
+ ## 2.创建函数和过程的主体
+ 实现语句
 ```sql
  create or replace PACKAGE BODY MyPack AS
   FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER
@@ -65,8 +65,8 @@ END MyPack;
 ```
  ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/2.png )
  
- # 3.执行函数部分的测试
+ ## 3.执行函数部分的测试
   ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/3.png )
     
-  # 4.执行函数部分的测试
+  ## 4.执行函数部分的测试
   ![运行结果](https://github.com/lihongfei666/Oracle/blob/master/test5/4.png )
